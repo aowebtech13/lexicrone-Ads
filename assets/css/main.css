@@ -53,7 +53,7 @@
   --tg-heading-line-height: 1.2;
   --tg-body-font-color: #888888;
   --tg-heading-font-color: #FFFFFF;
-  --tg-primary-color: #FFCC66;
+  --tg-primary-color:   #f3359d ;
   --tg-secondary-color: #191A1B;
   --tg-color-dark-blue: #0E104B;
   --tg-color-yellow-light: #FFBE17;
@@ -3230,7 +3230,7 @@ blockquote::before {
   top: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, #ffcc66 0%, #241b09 100%);
+  background: linear-gradient(180deg,   #f3359d  0%, #241b09 100%);
 }
 blockquote > p {
   margin-bottom: 10px !important;
