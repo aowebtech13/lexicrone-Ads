@@ -345,7 +345,7 @@ textarea {
   -moz-user-select: none;
   background: var(--tg-primary-color) none repeat scroll 0 0;
   border: none;
-  color: var(--tg-color-dark);
+  color: #FFFFFF;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
