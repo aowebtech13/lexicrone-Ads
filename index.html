@@ -370,28 +370,29 @@
                             <br>
                            
                             <audio id="myAudio" controls loop style="width: 100%;">
-                                <source src="/assets/img/lexicrone-audio.ogg" type="audio/mpeg">
-                              </audio>
-                              
-                              <script>
+                                <source src="/assets/img/lexicrone-audio.ogg" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            
+                            <script>
                                 const audio = document.getElementById("myAudio");
                                 audio.volume = 0.5;
-                              
-                                function playOnScroll() {
-                                  // This triggers as soon as the user scrolls down
-                                  audio.play().then(() => {
-                                      console.log("Audio started via scroll");
-                                  }).catch(error => {
-                                      console.log("Browser still blocked it; waiting for a click.");
-                                  });
-                                  
-                                  // Remove the listener so it doesn't keep trying to play every time they scroll
-                                  window.removeEventListener('scroll', playOnScroll);
+                            
+                                function playOnClick() {
+                                    // This triggers as soon as the user clicks anywhere on the page
+                                    audio.play().then(() => {
+                                        console.log("Audio started via user click");
+                                    }).catch(error => {
+                                        console.log("Playback failed:", error);
+                                    });
+                                    
+                                    // Remove the listener so it doesn't restart/interfere on every future click
+                                    document.removeEventListener('click', playOnClick);
                                 }
-                              
-                                // Listen for the scroll event
-                                window.addEventListener('scroll', playOnScroll);
-                              </script>
+                            
+                                // Listen for a click anywhere on the website
+                                document.addEventListener('click', playOnClick);
+                            </script>
                         </div>
                         <img src="assets/img/lexicrone-livesession.png" alt="" width="500px" height="400px">
 
