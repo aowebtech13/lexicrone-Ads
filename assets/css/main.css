@@ -3374,4 +3374,56 @@ blockquote cite {
   font-size: 16px;
 }
 
+/*=========================
+    27. Contact
+===========================*/
+.contact__form-wrap {
+  background: #1F2021;
+  padding: 50px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--tg-border-1);
+}
+@media (max-width: 767.98px) {
+  .contact__form-wrap {
+    padding: 30px 20px;
+  }
+}
+.contact__form .form-grp {
+  margin-bottom: 25px;
+}
+.contact__form .form-grp input,
+.contact__form .form-grp textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--tg-border-1);
+  padding: 15px 25px;
+  color: var(--tg-color-white-default);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.contact__form .form-grp input::placeholder,
+.contact__form .form-grp textarea::placeholder {
+  color: #888;
+}
+.contact__form .form-grp input:focus,
+.contact__form .form-grp textarea:focus {
+  border-color: var(--tg-primary-color);
+  outline: none;
+}
+.contact__form .form-grp textarea {
+  height: 150px;
+}
+.contact__form .submit-btn .tg-btn {
+  border: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */
